@@ -27,3 +27,8 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+
+
+
+#### The 'terraform.tfvars' can overwrite the variables.tf - so I am adding it to the ignore files
+*.tfvars*
