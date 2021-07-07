@@ -32,3 +32,6 @@ override.tf.json
 
 #### The 'terraform.tfvars' can overwrite the variables.tf - so I am adding it to the ignore files
 *.tfvars*
+.terraform.lock.hcl
+
+
