@@ -12,3 +12,8 @@ vpc_cidr_block = "172.20.1.0/16"
 env_name       = "my-vpc-dev"
 
 ```
+
+For debug and logging enable the verbose trace, good to understand how terraform communicates with the APIs
+```
+export TF_LOG=TRACE
+```
