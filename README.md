@@ -13,7 +13,10 @@ env_name       = "my-vpc-dev"
 
 ```
 
-For debug and logging enable the verbose trace, good to understand how terraform communicates with the APIs
+For debug and logging enable the verbose trace "run the below command", good to understand how terraform communicates with the APIs
 ```
-export TF_LOG=TRACE
+export TF_LOG=TRACE   #enable
+export TF_LOG=       #disable
+
+printenv TF_LOG  # check if the env variable is set or not
 ```
