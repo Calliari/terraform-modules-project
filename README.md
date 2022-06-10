@@ -23,8 +23,9 @@ printenv TF_LOG  # check if the env variable is set or not
 
 Before fire it up and create the resources with the terrafom code, run some checks:
 ```
-terraform fmt -check -recursive   # check what would be "Reformat"
-terraform fmt -diff -recursive    # check the difference 
+terraform fmt -check -recursive   # check what would be "Reformat" --> malformed code
+terraform fmt -check -diff        # check the difference 
+terraform fmt -recursive          # apply the formatting of the configuration showed
 terraform validate                # validate the code and erros 
 terraform init                    # initialise terraform 
 ```
