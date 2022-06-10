@@ -20,3 +20,11 @@ export TF_LOG=       #disable
 
 printenv TF_LOG  # check if the env variable is set or not
 ```
+
+Before fire it up and create the resources with the terrafom code, run some checks:
+```
+terraform fmt -check -recursive   # check what would be "Reformat"
+terraform fmt -diff -recursive    # check the difference 
+terraform validate                # validate the code and erros 
+terraform init                    # initialise terraform 
+```
