@@ -13,12 +13,20 @@ env_name       = "my-vpc-dev"
 
 ```
 
-For debug and logging enable the verbose trace "run the below command", good to understand how terraform communicates with the APIs
+For debug and logging, enable the verbose with the "command below", good to understand how terraform communicates with the APIs
 ```
+# available options [TRACE, DEBUG, INFO, WARN, ERROR]
 export TF_LOG=TRACE   #enable
-export TF_LOG=       #disable
+export TF_LOG=        #disable
 
 printenv TF_LOG  # check if the env variable is set or not
+```
+
+For a file debug instead of the console debug run the following:
+```
+# available options [TRACE, DEBUG, INFO, WARN, ERROR]
+export TF_LOG=TRACE                   #enable
+export TF_LOG_PATH=.terraform.log  
 ```
 
 Before fire it up and create the resources with the terrafom code, run some checks:
