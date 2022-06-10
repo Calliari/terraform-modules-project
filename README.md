@@ -26,7 +26,7 @@ For a file debug instead of the console debug run the following:
 ```
 # available options [TRACE, DEBUG, INFO, WARN, ERROR]
 export TF_LOG=TRACE                   #enable
-export TF_LOG_PATH=.terraform.log  
+export TF_LOG_PATH=./terraform.log  
 ```
 
 Before fire it up and create the resources with the terrafom code, run some checks:
