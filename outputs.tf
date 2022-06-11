@@ -5,11 +5,11 @@
 #   value = "${module.vpc.vpc_owner_id}"
 # }
 output "vpc-id" {
-  value = "${module.vpc.vpc_id}"
+  value = module.vpc.id
 }
 output "vpc-arn" {
-  value = "${module.vpc.vpc_arn}"
+  value = module.vpc.arn
 }
 output "vpc-cidr_block" {
-  value = "${module.vpc.vpc_cidr_block}"
+  value = module.vpc.cidr_block
 }
