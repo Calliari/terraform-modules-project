@@ -3,11 +3,10 @@
 module "vpc" {
   source = "./modules/vpc"
 
-  cidr_block  = var.vpc_cidr_block
-  name = var.vpc_name
+  config = var.vpc_config
 
-  tags = {
-    Environment   = var.environment_name
-  }
-
+  tag_map = merge(var.naming_tag_map, {
+    Name = "${var.naming_tag_map.project}-vpc"
+  })
 }
+
