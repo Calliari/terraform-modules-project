@@ -3,14 +3,12 @@ This is infrastructure with terraform-modules
 
 For learning and test purpose new ways for create a new env
 
-If a file named 'terraform.tfvars' is added all the variables defined on 'variabled.tf' file will be overwiten by 'terraform.tfvars' variables
-I.g:
-```
-profile        = "my-own-acc"
-region         = "us-east-5"
-vpc_cidr_block = "172.20.1.0/16"
-env_name       = "my-vpc-dev"
+If a file named 'terraform.tfvars' is added all the variables defined on 'variabled.tf' file will be overwiten by 'terraform.tfvars' variables.
 
+Add the profile for terraform start to use the aws-acc  on the `terraform.tfvars` file
+```
+# This profile name can be found in the on the `~/.aws/credentials` as [my-own-acc]
+echo 'profile        = "my-own-acc"' >> ./terraform.tfvars
 ```
 
 For debug and logging, enable the verbose with the "command below", good to understand how terraform communicates with the APIs
