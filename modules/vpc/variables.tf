@@ -1,12 +1,12 @@
 
-variable "cidr_block" {
+variable "config" {
+  type        = map(string)
   description = "The CIDR block for the VPC."
+  default     = {}
 }
 
-variable "tags" {
-  type = map
-}
-
-variable "name" {
- description = "The name for this VPV."
+variable "tag_map" {
+  type        = map(string)
+  description = "Map of tags to be applied to all resources"
+  default     = {}
 }
