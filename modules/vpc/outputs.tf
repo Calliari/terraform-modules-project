@@ -1,3 +1,6 @@
+output "all" {
+  value = aws_vpc.this.*
+}
 output "id" {
   description = "output the vpc id"
   value       = aws_vpc.this.id
