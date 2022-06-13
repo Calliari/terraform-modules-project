@@ -7,6 +7,12 @@ variable "tag_map" {
   description = "Map of tags to be applied to all resources"
   default     = {}
 }
+
+variable "vpc_subnet_public_count" {
+  description = "The total number private subnets"
+  default     = null
+}
+
 variable "availability_zone" {
   description = "The AZ for the subnet"
   default     = null
