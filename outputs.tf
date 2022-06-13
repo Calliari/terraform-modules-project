@@ -16,10 +16,19 @@ output "vpc-cidr_block" {
 ###########################
 # Subnets
 ###########################
-output "vpc-subnet-public-id" {
-  value = "${module.public_subnet.id.*}"
-}
-# output "vpc-subnet-private-id" {
-#   value = "${module.private_subnet.id.*}"
+# output "vpc-subnet-public-id" {
+#   value = module.public_subnet.all
 # }
+
+output "vpc-subnet-public-id" {
+  value = module.public_subnet.id.*
+}
+
+# output "vpc-subnet-public-id" {
+#   value = module.public_subnet.all
+# }
+
+output "vpc-subnet-private-id" {
+  value = module.private_subnet.id.*
+}
 

@@ -32,6 +32,9 @@ variable "naming_tag_map" {
   )
 }
 
+#######################
+# VAR VPC
+#######################
 variable "vpc_config" {
   description = "cidr_block, enable_dns_hostnames, assign_generated_ipv6_cidr_block"
   type = object(
@@ -50,5 +53,13 @@ variable "vpc_config" {
   )
 }
 
-
-
+#######################
+# VAR SUBNET
+#######################
+variable "vpc_number_of_subnets" {
+  type = map(number)
+  default = {
+    public  = 2
+    private = 2
+  }
+}

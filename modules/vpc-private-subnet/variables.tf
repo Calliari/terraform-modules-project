@@ -1,0 +1,52 @@
+variable "vpc_id" {
+  description = "The VPC ID"
+}
+
+variable "tag_map" {
+  type        = map(string)
+  description = "Map of tags to be applied to all resources"
+  default     = {}
+}
+
+variable "vpc_subnet_private_count" {
+  description = "The total number private subnets"
+  default     = null
+}
+
+variable "number_of_private_subnets" {
+  description = "The total number private subnets"
+  default     = null
+}
+
+variable "availability_zone" {
+  description = "The AZ for the subnet"
+  default     = null
+}
+
+variable "availability_zone_id" {
+  description = "The AZ ID of the subnet"
+  default     = null
+}
+
+variable "vpc_cidr_block" {
+  description = "The CIDR block for private_subnet on this vpc"
+  # type    = list(string)  # Terraform v1.1.1 write list(string) instead to explicitly indicate that the list elements are strings.
+  # default = []
+}
+
+variable "ipv6_cidr_block" {
+  description = "The IPv6 network range for the subnet, in CIDR notation"
+  default     = null
+}
+
+variable "map_public_ip_on_launch" {
+  description = "Specify true to indicate that instances launched into the subnet should be assigned a private IP address"
+  default     = false
+  type        = bool
+}
+
+variable "assign_ipv6_address_on_creation" {
+  description = "Specify true to indicate that network interfaces created in the specified subnet should be assigned an IPv6 address"
+  default     = false
+  type        = bool
+}
