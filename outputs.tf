@@ -1,4 +1,14 @@
 ###########################
+# data output
+###########################
+# using the data source to get the output 
+output "aws_current_region" {
+  description = "output the AWS region"
+  value       = data.aws_region.current
+}
+
+
+###########################
 # VPC
 ###########################
 # output "vpcowner-id" {
