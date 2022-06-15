@@ -1,7 +1,8 @@
 # Terraform s3 onfiguration
 
 module "website_s3_bucket" {
-  source      = "./modules/aws-s3-static-website-bucket"
+  # source      = "./modules/aws-s3-static-website-bucket"
+  source      = "git@github.com:Calliari/terraform-modules-project.git?ref=0.4"
   aws_profile = var.profile
 
   bucket_name = "s3-robin-example-2020-01-15"
