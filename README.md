@@ -1,7 +1,8 @@
 For terraform certification tutorials --> https://learn.hashicorp.com/collections/terraform/certification-associate-tutorials
 
 # terraform-modules-project
-This is infrastructure with terraform-modules
+reference study --> (https://learn.hashicorp.com/collections/terraform/modules)
+This is infrastructure with terraform-modules 
 
 For learning and test purpose new ways for create a new env
 
