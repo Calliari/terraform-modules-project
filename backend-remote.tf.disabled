@@ -1,0 +1,18 @@
+terraform {
+  backend "s3" {
+    bucket = "BUCKET_NAME"
+    key    = "project/dev/terraform.tfstate"
+    region = "us-east-2"
+  }
+}
+
+## Create the and "s3-bucket-backend" and the "dynamodb_table"
+# git clone -b s3-remote-state git@github.com:Calliari/terraform-modules-project.git
+
+### State migration module
+## Rename the backend config file
+# mv backend-remote.tf.disabled backend-remote.tf
+
+## Update the region, bucket, and dynamodb table
+# AWS_PROFILE=PROFILE_NAME
+# terraform init -backend-config="bucket=BUCKET_NAME" -backend-config="region=REGION_NAME" -backend-config="dynamodb_table=TABLE_NAME"
