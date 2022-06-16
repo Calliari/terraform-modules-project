@@ -1,5 +1,5 @@
-For terraform certification tutorials --> https://learn.hashicorp.com/collections/terraform/certification-associate-tutorials
-Medium: https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a
+- For terraform certification tutorials --> https://learn.hashicorp.com/collections/terraform/certification-associate-tutorials
+- Medium: https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a
 
 # terraform-modules-project
 reference study --> (https://learn.hashicorp.com/collections/terraform/modules)
