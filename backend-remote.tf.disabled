@@ -1,8 +1,11 @@
 terraform {
   backend "s3" {
-    bucket = "BUCKET_NAME"
-    key    = "project/dev/terraform.tfstate"
-    region = "us-east-2"
+    encrypt        = "true"
+    bucket         = "BUCKET_NAME"
+    key            = "project/dev/terraform.tfstate"
+    profile        = "AWS_PROFILE_NAME"
+    region         = "us-east-2"
+    dynamodb_table = "TABLE_NAME-terraform-state-lock"
   }
 }
 
