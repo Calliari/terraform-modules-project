@@ -4,7 +4,7 @@ terraform {
     bucket         = "BUCKET_NAME"
     key            = "project/dev/terraform.tfstate"
     profile        = "AWS_PROFILE_NAME"
-    region         = "us-east-2"
+    region         = "REGION_NAME"
     dynamodb_table = "TABLE_NAME-terraform-state-lock"
   }
 }

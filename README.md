@@ -12,7 +12,7 @@ If a file named 'terraform.tfvars' is added all the variables defined on 'variab
 
 Add the profile for terraform start to use the aws-acc  on the `terraform.tfvars` file
 ```
-# This profile name can be found in the on the `~/.aws/credentials` as [my-own-acc]
+# This profile name can be found in the on the `~/.aws/credentials` as [my-own-acc] or "export AWS_PROFILE=my-own-acc"
 echo 'profile        = "my-own-acc"' >> ./terraform.tfvars
 ```
 
