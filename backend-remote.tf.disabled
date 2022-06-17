@@ -1,0 +1,12 @@
+##################################################################################
+# S3 terrafrom remote backend
+##################################################################################
+# storing the terraform tf-state on this location
+terraform {
+  backend "s3" {
+    bucket         = "BUCKET_NAME"
+    region         = "REGION_NAME"
+    key            = "project/ec2/terraform.tfstate"
+  }
+}
+
