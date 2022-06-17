@@ -5,10 +5,10 @@ This branch will create a S3 and dynamodb
 Create a file that hold the S3-bucket name and the dynamodb-table name:
 ```
 cat > terraform.tfvars << EOF
-profile             = "AWS_ACC_PROFILE_NAME"
-region              = "REGION_NAME"
-bucket_prefix_name  = "s3-state-tf-UNIQUE_NAME"
-dynamodb_table_name = "dynamodb-state-tf-UNIQUE_NAME"
+profile                = "AWS_ACC_PROFILE_NAME"
+region                 = "REGION_NAME"
+s3_bucket_prefix_name  = "s3-tf-state-UNIQUE_NAME"
+dynamodb_table_name    = "dynamodb-tf-state-lock-UNIQUE_NAME"
 EOF
 ```
 
