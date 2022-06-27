@@ -18,18 +18,20 @@ variable "naming_tag_map" {
   description = "Naming prefix for resources using tags"
   type = object(
     {
-      terraform   = bool
-      environment = string
-      company     = string
-      project     = string
+      terraform           = bool
+      terraform-workspace = string
+      environment         = string
+      company             = string
+      project             = string
     }
   )
   default = (
     {
-      terraform   = true
-      environment = "dev"
-      company     = "company-abc"
-      project     = "learning-module"
+      terraform           = true
+      terraform-workspace = ""
+      environment         = "dev"
+      company             = "company-abc"
+      project             = "learning-module"
 
     }
   )

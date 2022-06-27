@@ -9,5 +9,6 @@ module "website_s3_bucket" {
 
   tag_map = merge(var.naming_tag_map, {
     Name = "${var.naming_tag_map.project}-s3"
+    terraform-workspace = "${terraform.workspace}"
   })
 }

@@ -7,7 +7,8 @@ module "public_subnet" {
   vpc_subnet_public_count = var.vpc_number_of_subnets.public
 
   tag_map = merge(var.naming_tag_map, {
-    Name = "${var.naming_tag_map.project}-public-subnet"
+    Name                = "${var.naming_tag_map.project}-public-subnet"
+    terraform-workspace = "${terraform.workspace}"
   })
 
 }

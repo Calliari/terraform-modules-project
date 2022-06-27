@@ -7,7 +7,8 @@ module "private_subnet" {
   vpc_subnet_private_count = var.vpc_number_of_subnets.private
 
   tag_map = merge(var.naming_tag_map, {
-    Name = "${var.naming_tag_map.project}-private-subnet"
+    Name                = "${var.naming_tag_map.project}-private-subnet"
+    terraform-workspace = "${terraform.workspace}"
   })
 
 }
