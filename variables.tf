@@ -1,3 +1,6 @@
+#######################
+# VAR PROFILE, REGION AND TAG-NAMING
+#######################
 variable "profile" {
   description = "AWS profile name to use from the aws configure command '~/.aws/config'"
   type        = string

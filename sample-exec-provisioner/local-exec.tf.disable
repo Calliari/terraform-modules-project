@@ -10,3 +10,14 @@ resource "null_resource" "mk" {
     command = "echo '1' > status.txt"
   }
 }
+
+# condition example 
+#######################
+# TERRAFORM WORKSPACE 
+#######################
+resource "null_resource" "terraform-workspace-test" {
+  provisioner "local-exec" {
+    # when the "terraform.workspace" is "default" set value to "5", otherwise set it to the actual value of "1"
+    command = "echo ${terraform.workspace}: ${terraform.workspace == "default" ? 5 : 1}"
+  }
+}
