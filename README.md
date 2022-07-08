@@ -15,6 +15,13 @@ Add the profile for terraform start to use the aws-acc  on the `terraform.tfvars
 # This profile name can be found in the on the `~/.aws/credentials` as [my-own-acc] or "export AWS_PROFILE=my-own-acc"
 echo 'profile        = "my-own-acc"' >> ./terraform.tfvars
 ```
+OR export the authentication with session environment variables
+```
+$ export AWS_ACCESS_KEY_ID="anaccesskey"
+$ export AWS_SECRET_ACCESS_KEY="asecretkey"
+$ export AWS_REGION="us-west-2"
+```
+
 
 For debug and logging, enable the verbose with the "command below", good to understand how terraform communicates with the APIs
 ```
