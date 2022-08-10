@@ -47,3 +47,17 @@ terraform fmt -recursive          # apply the formatting of the configuration sh
 terraform validate                # validate the code and erros 
 terraform init                    # initialise terraform 
 ```
+
+The execution, run the `plan` and `apply`:
+```
+terraform plan -out=terraform-plan.plan  # generate the execution plan
+terraform apply terraform-plan.plan      # apply the execution plan
+```
+
+Destroy the resources created, run the `destroy`:
+```
+terraform destroy terraform-plan.plan    # apply the execution plan
+```
+
+
+
