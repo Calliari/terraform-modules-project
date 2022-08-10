@@ -54,9 +54,10 @@ terraform plan -out=terraform-plan.plan  # generate the execution plan
 terraform apply terraform-plan.plan      # apply the execution plan
 ```
 
-Destroy the resources created, run the `destroy`:
+Plan the destroy resources created, run the `plan -destroy` and the `apply -destroy`:
 ```
-terraform destroy terraform-plan.plan    # apply the execution plan
+terraform plan -destroy    # generate the execution plan -destroy
+terraform apply -destroy   # apply the execution plan -destroy
 ```
 
 
